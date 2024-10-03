@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        ol {
+            list-style-position: inside;
+        }
+
+        li {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form id="form">
+        <input id="url" type="text" required>
+        <button >Short My URL</button>
+    </form>
+
+    <h1>List of shortened URLs:</h1>
+    <ol id="urlsList"></ol>
+
+    <hr>
+    <button id="clearStorage">Clear Storage</button>
+
+    <script src="/index.js"></script>
+</body>
+</html>
